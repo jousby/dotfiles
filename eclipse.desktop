@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=Java - Eclipse 
+Icon=eclipse
+Path=/scratch/opt/java/ide/luna/eclipse
+Exec=env UBUNTU_MENUPROXY= GTK2_RC_FILES=/usr/share/themes/Raleigh/gtk-2.0/gktrc:/home/jousby/.gtkrc-eclipse /scratch/opt/java/ide/luna/eclipse/eclipse
+StartupNotify=false
+StartupWMClass=Eclipse
+OnlyShowIn=Unity;
+X-UnityGenerated=true
