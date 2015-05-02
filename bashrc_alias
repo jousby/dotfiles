@@ -1,9 +1,13 @@
+#!/bin/bash
+
 alias vi='vim'
 alias ll="ls -lhA"
+
+alias sshkeys='ssh-keygen -t rsa -N "" -f ~/.ssh/id_rsa'
+
 
 ###############################################################################
 # Directory shortcuts
 ###############################################################################
 alias cdc='cd /scratch/code/'
-alias cdj='cd $JAVA_DEV_TOOLS'
-
+alias cdd='cd ${DEV_TOOLS}'

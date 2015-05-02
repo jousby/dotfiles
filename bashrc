@@ -1,3 +1,8 @@
+###############################################################################
+# Personal bash extensions that imports personal bash aliases
+###############################################################################
+
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 
 ###############################################################################
@@ -6,12 +11,9 @@
 
 DEV_TOOLS=/scratch/opt
 
-export JAVA_DEV_TOOLS=$DEV_TOOLS/java
-JDK_INSTALLS=$JAVA_DEV_TOOLS/jdk
-JAVA_HOME=$JDK_INSTALLS/java8.latest
-GRADLE_HOME=$DEV_TOOLS/groovy/tools/gradle-2.0
+JAVA_HOME=${DEV_TOOLS}/java/jdk/java8.latest
 
-export PATH=$JAVA_HOME/bin:$GRADLE_HOME/bin:/scratch/opt/scala/tools/sbt/bin:$PATH
+export PATH=$JAVA_HOME/bin:$PATH
 
  
 ###############################################################################
@@ -22,12 +24,12 @@ export PATH=$JAVA_HOME/bin:$GRADLE_HOME/bin:/scratch/opt/scala/tools/sbt/bin:$PA
 source /etc/bash_completion.d/git-prompt
 PS1="\n\[\033[00;34m\]\u@\h\[\033[00;34m\] \[\033[32m\]\w\[\033[0m\]\$(__git_ps1)\n$ \[\033[0m\]"
 
-source ~/.bashrc_aliases
+source ${DIR}/bashrc_alias
 
 ###############################################################################
 # Functions
 ###############################################################################
 
 function sinit {
-  mkdir -p /scratch/{code/{current,archive},opt/{java/{ide,jdk,tools},javascript/{tools}},downloads}
+  mkdir -p /scratch/{code/{current,archive},opt/{java/{ide,jdk,tools},javascript/tools},downloads}
 }
