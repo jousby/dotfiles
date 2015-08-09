@@ -31,5 +31,5 @@ source ${DIR}/bashrc_alias
 ###############################################################################
 
 function sinit {
-  mkdir -p /scratch/{code/{current,archive},opt/{java/{ide,jdk,tools},javascript/tools},downloads}
+  mkdir -p /scratch/{code/archive},opt/{java/{ide,jdk,tools},javascript/tools},downloads}
 }
