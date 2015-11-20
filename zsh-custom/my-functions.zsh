@@ -17,6 +17,6 @@ function new-alias () {
     fi
   fi
 
-  echo "alias $NAME='$DEFINTION'" >> ~/.bash_alias
-														      . ~/.bash_alias
+  echo "alias $NAME='$DEFINTION'" >> ~/dotfiles/zsh-custom/alias.zsh
+  . ~/dotfiles/zsh-custom/alias.zsh
 }
