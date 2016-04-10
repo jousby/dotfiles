@@ -8,13 +8,13 @@ SCRIPT_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 ###############################################################################
 
 # Clone powerline fonts project to ./tmp and run install
-git clone git@github.com:powerline/fonts.git ${SCRIPT_DIR}/tmp/fonts
+git clone https://github.com/powerline/fonts.git ${SCRIPT_DIR}/tmp/fonts
 
 ${SCRIPT_DIR}/tmp/fonts/install.sh
 fc-cache -vf ~/.fonts/
 
 # Clone solarized ls dircolors project
-git clone git@github.com:seebi/dircolors-solarized.git ${SCRIPT_DIR}/tmp/dircolors-solarized
+git clone https://github.com/seebi/dircolors-solarized.git ${SCRIPT_DIR}/tmp/dircolors-solarized
 
 cp ${SCRIPT_DIR}/tmp/dircolors-solarized/dircolors.256dark ~/.dircolors
 cp ${SCRIPT_DIR}/tmp/dircolors-solarized/dircolors.256dark ~/.dir_colors
